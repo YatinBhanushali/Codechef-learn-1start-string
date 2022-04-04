@@ -1,0 +1,15 @@
+# cook your dish here
+def sol():
+    N = int(input())
+    S = str(input())
+    S = S.replace(".", "")
+    if S.count("HT")*2 == len(S):
+        print("Valid")
+    else:
+        print("Invalid")
+
+T=int(input())
+
+while T>0:
+    T-=1
+    sol()
