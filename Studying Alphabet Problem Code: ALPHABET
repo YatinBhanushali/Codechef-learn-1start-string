@@ -1,0 +1,17 @@
+S = str(input())
+
+def sol():
+    W = str(input())
+    turn = 0
+    for i in W:
+        if i not in S:
+            turn=1
+    if turn ==0:
+        print("Yes")
+    else:
+        print("No")
+
+T = int(input())
+while T>0:
+    T-=1
+    sol()
