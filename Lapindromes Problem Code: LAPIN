@@ -1,0 +1,19 @@
+def sol():
+    S= str(input())
+    if len(S) %2==0:
+        S1= S[:len(S)//2]
+        S2 = S[len(S)//2:]
+    else:
+        S1= S[:len(S)//2]
+        S2 = S[len(S)//2+1:]
+    
+
+    if sorted(S1) == sorted(S2):
+        print("YES")
+    else:
+        print("NO")
+
+T=int(input())
+for _ in range(T):
+    T-=1
+    sol()
